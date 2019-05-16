@@ -1,5 +1,6 @@
 # rPPG
-This repo measures instantaneous heart rate of a person with remote photoplethysmography(rPPG) without any physical contact, capturing rPPG signal through webcam.
+This repo measures instantaneous heart rate of a person through remote photoplethysmography(rPPG) without any physical contact with sensor, It captures video stream through webcam or video file. The captured frames are passed through a pre trained network to segment face skin pixels to consistently sample the RoI. We have used POS to extract the rPPG signal from spatially averaged masked frames. The extraced signal is further processed to estimate the instant heart rate. This code runs on cuda enabled device at 30 FPS.
+
 
 ## Pipeline
 
