@@ -2,15 +2,15 @@
 
 This repo monitors real time cardiac activities of a person through remote photoplethysmography(rPPG) without any physical contact with sensor, by detecing pulse induced subtle color changes from video stream through webcam sensor or a video file.
 
-## Pre Processing 
+### Pre Processing 
 Skin pixels have significant part in extraction of rPPG signal we trained first ever deep learning model for semantic 
 segmentation of skin and non skin pixels. This is novel technique for regio of interst (ROI) selection and tracking. The model is robust to motion, multiple postures and segments skin pixels from non skin very accurately.
 Waveform of rPPG signal is different when extracted from different rigion of skin pixels therefore to consistently sample ROI from same part of skin we detect face in frame as pre step to semantic segmentation.
 
-## rPPG Signal Extraction 
+### rPPG Signal Extraction 
 After accurately sampling ROI for signal extraction we compute the spatial red, green and blue channel mean of skin segmented pixels to minimise camera quantization error. Averaged values of RGB channel are temporaly normalized and projected to plane orthogonal to skin-tone. The projected signal is alpha tuned to extract rPPG signal. 
 
-## Post processing
+### Post processing
 
 We apply signal processing techniques, moving average filter of order 6 to remove noise from signal. To estimate heart rate we compute power spectral density PSD applying fast fourier transformation (FFT) on rPPG signal. It  is then band pass filtered to analyse only frequencies of interest. The maximum power spectrum represents the frequency of instant heart rate. 
 
