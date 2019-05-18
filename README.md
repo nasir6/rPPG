@@ -12,7 +12,7 @@ After accurately sampling ROI for signal extraction we compute the spatial red, 
 
 ## Post processing
 
-We apply moving average filter of order 6 to remove noise from signal. To estimate heart rate we compute power spectral density PSD applying fast fourier transformation (FFT) on rPPG signal. It  is then band pass filtered to analyse only frequencies of interest. The maximum power spectrum represents the frequency of instant heart rate. 
+We apply signal processing techniques, moving average filter of order 6 to remove noise from signal. To estimate heart rate we compute power spectral density PSD applying fast fourier transformation (FFT) on rPPG signal. It  is then band pass filtered to analyse only frequencies of interest. The maximum power spectrum represents the frequency of instant heart rate. 
 
 This code runs on cuda enabled device at 30 FPS.
 
