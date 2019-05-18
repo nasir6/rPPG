@@ -1,6 +1,6 @@
 # rPPG
 
-This repo monitors instantaneous heart rate of a person through remote photoplethysmography(rPPG) without any physical contact with sensor, by detecing pulse induced subtle color changes from video stream through webcam sensor or a video file.
+This repo monitors real time cardiac activities of a person through remote photoplethysmography(rPPG) without any physical contact with sensor, by detecing pulse induced subtle color changes from video stream through webcam sensor or a video file.
 
 ## Pre Processing 
 Skin pixels have significant part in extraction of rPPG signal we trained first ever deep learning model for semantic 
