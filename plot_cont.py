@@ -20,7 +20,7 @@ class DynamicPlot():
         self.hrs_to_plot = np.zeros(self.signal_size)
 
         self.hr_texts = self.pulse_ax.text(0.1, 0.9,'0', ha='center', va='center', transform=self.pulse_ax.transAxes)
-        self.pulse_ax.set_title('Pulse')
+        self.pulse_ax.set_title('BVP')
         self.hr_axis.set_title('Heart Rate')
         self.pulse_ax.set_autoscaley_on(True)
 

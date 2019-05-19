@@ -75,7 +75,7 @@ class CaptureFrames():
             self.pipe.send([orig])
 
             if self.show_mask:
-                cv2.imshow('frame', orig)
+                cv2.imshow('mask', orig)
             
             if self.frames_count % 30 == 29:
                 time_2 = time.time()
