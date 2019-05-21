@@ -8,7 +8,7 @@ segmentation of skin and non skin pixels. This is novel technique for region of 
 rPPG signal exhibit different waveform when sampled from different rigions of skin, therefore, to consistently sample ROI from same part of skin we detect face as prerequisite step to semantic segmentation.
 
 ### rPPG Signal Extraction 
-After detection and tracking ROI for signal extraction we compute the spatial red, green and blue channel mean of skin segmented pixels to minimise camera quantization error. Averaged values of RGB channel are temporaly normalized and projected to plane orthogonal to skin-tone. The projected signal is alpha tuned to extract signal. 
+After detection and tracking ROI for signal extraction we compute the spatial red, green and blue channel mean of skin segmented pixels to minimise camera quantization error. Averaged values of RGB channel are temporally normalized and projected to plane orthogonal to skin-tone. The projected signal is alpha tuned to extract signal. 
 
 ### Post processing
 
