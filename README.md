@@ -28,7 +28,8 @@ This code runs on cuda enabled device at 30 FPS and estimates heartbeat in one s
 * Pytorch
 * OpenCv
 * Matplotlib, Scipy, Pillow
-* Git Lfs to track trained model parameters
+* Git Lfs to track trained model parameters or alternatively download the model from [google drive]( https://drive.google.com/open?id=1shRnrUAF5HyA_vwXJfCcrNVFkltT7U5E)
+
 * We have used deep learning for semantic segmentation of skin and non skin pixels from frames. The segmentation requires cuda enabled device
 
 
