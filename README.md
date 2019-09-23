@@ -1,4 +1,4 @@
-# rPPG
+# Robust Heart rate estimation from facial videos
 
 This repo monitors real time cardiac activities of a person through remote photoplethysmography(rPPG) without any physical contact with sensor, by detecing blood volume pulse induced subtle color changes from video stream through webcam sensor or a video file.
 
