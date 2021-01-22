@@ -14,7 +14,7 @@ PRE_STEP_CDF = False
 
 class Pulse():
     def __init__(self, framerate, signal_size, batch_size, image_size=256):
-        self.framerate = framerate
+        self.framerate = float(framerate)
         self.signal_size = signal_size
         self.batch_size = batch_size
         self.minFreq = 0.9 #
