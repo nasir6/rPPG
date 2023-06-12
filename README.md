@@ -33,13 +33,20 @@ This code runs on cuda enabled device at 30 FPS and estimates heartbeat in one s
 * We have used deep learning for semantic segmentation of skin and non skin pixels from frames. The segmentation requires cuda enabled device
 
 
-Clone this repository.
-
-        git clone https://github.com/nasir6/rPPG.git
-
-To run
-
-        cd rPPG
-        python3 run.py --source=0 --frame-rate=25
+### Clone this repository.
+```
+git clone https://github.com/nasir6/rPPG.git
+```
+### Create the environment
+```
+$ conda create --name rppg
+$ conda activate rppg
+$ pip install -r requirements.txt
+```
+### Run the application
+```
+$ cd rPPG
+$ python3 run.py --source=0 --frame-rate=25
+```
 
 
